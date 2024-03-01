@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wdth,wght@62.5..100,100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
+        rel="stylesheet">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web-Developer</p>
+                <h1>Hello, I'm <span>Pratishtha</span>...... </h1>
+            </div>
+        </div>
+    </div>
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/cat.jpg" alt="lonewolf">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-me">Hi! I’m Pratishtha.<br><br>I adore making people smile.<br> When I’m not
+                        programming,
+                        you can
+                        find me drawing.
+                        <br>If you'd like, scroll down to see some examples of my work!<br>Want to work together? I’d
+                        love
+                        to hear from you!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++</li><br>
+                            <li><span>Web Development</span><br>Html, Css, Javascript</li><br>
+                            <li><span>Operating System</span><br>Linux, Windows</li><br>
+                            <li><span>Platforms</span><br>Git, GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-present</span><br>B.Tech from Poornima University, JAIPUR</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- projects-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/img1.png" alt="">
+                    <div class="layer">
+                        <h3>Memory Game</h3>
+                        <p>Test your memory prowess in this thrilling game of pairs where hidden pictures await
+                            discovery! Match identical images to unveil the mysteries within.</p>
+                        <a href="MemoryGame/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/img2.png" alt="">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>Dive into a musical journey with our sleek music player, offering a rich collection of tunes
+                            waiting to be explored and enjoyed.</p>
+                        <a href="MusicPlayer/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/img3.png" alt="">
+                    <div class="layer">
+                        <h3>Stone Paper Scissors</h3>
+                        <p>Engage in the classic game of strategy and chance with our virtual rendition of
+                            rock-paper-scissors, where every move brings anticipation and excitement!</p>
+                        <a href="RockPaper/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact section (^-^) -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- social media account later -->
+                    <div class="social-icons">
+                        <a href="mailto:sainipratishtha3@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>
+                        <a href="https://www.linkedin.com/in/pratishtha-saini-153803233/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/pratishthasaini"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="image/Pratishtha_saini_resume.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your mail" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Made with <i class="fa-regular fa-heart"></i> by Pratishtha</p>
+        </div>
+    </div>
+    <script>
+        // skills wala section
+
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/58f3e66a52.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
