@@ -20,5 +20,5 @@ Description: Created a personal portfolio website to showcase my skills and proj
 
 ## Contact
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/pratishtha-saini).
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/pratishtha-saini-153803233/).
 
